@@ -1,0 +1,57 @@
+@import "reset";
+@import "variables";
+@import "header";
+
+#s1 {
+	h3 {
+		background: limegreen;
+		font-family: $fuente;
+	}
+	p {
+		font-style: italic;
+		&.destacado {
+			font-weight: bold;
+			font-family: $fuente;
+		}
+	}
+}
+
+#telefe {
+	div {
+		width: 100px;
+		height: 100px;
+		display: inline-block;
+		background: green;
+		margin: 20px;
+		border-radius: 50px;
+
+		&:first-child {
+			background: blue;
+		}
+
+		&:last-child {
+			background: red;
+		}
+	}
+}
+
+#telefe2 {
+	div {
+		width: 100px;
+		height: 100px;
+		display: inline-block;
+		background: blue;
+		margin: 20px;
+		border-radius: 50px;
+
+		&:before {
+			content:"";
+			width: 100px;
+			height: 100px;
+			display: inline-block;
+			background: green;
+			margin: 20px;
+			border-radius: 50px;
+		}
+	}
+}

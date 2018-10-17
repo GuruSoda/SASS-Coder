@@ -1,0 +1,21 @@
+header {
+	background: $color4;
+	padding: 100px 0px;
+
+	h1 {
+		color: $color1;
+	}
+
+	h2 {
+		color: $color2;
+	}
+	p {
+		color: $color3;
+		a {
+			color: $color5;
+			&:hover {
+				color:cyan;
+			};
+		}
+	}
+}
